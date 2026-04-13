@@ -1,0 +1,164 @@
+<!--
+  <button onclick="changeLang('ar')">عربي</button>
+  <button onclick="changeLang('en')">English</button>
+-->
+
+<!doctype html>
+<html lang="ar">
+  <head>
+    <meta charset="UTF-8" />
+    <title>تجربة اللغات</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../fontawesome/css/all.min.css" />
+  </head>
+
+  <body>
+    <!-- <header>
+      <div class="image-box">
+          <img src="../image/شعار الشركة.jpeg" alt="">
+          </div>
+          <span>نموذج تقييم الصيانة الوقائية -قطاع الوسط- أمانة الرياض</span>
+          <span>استشاري - شركة مشاري الشثري</span>
+          <span>مدير المشروع / م . مدحت العوضي</span>
+    </header> -->
+    <form
+      id="steps_container"
+      class="container"
+      action="https://docs.google.com/forms/d/e/1FAIpQLScslpFIA8_XxJb8Nj-QFTkyC-Nac7HNRqb8lh58Gy1vS4Jo4Q/formResponse"
+      method="POST"
+    >
+      <div id="step1" class="step taftish container" style="display: flex">
+        <header>
+      <div class="image-box">
+          <img src="../image/شعار الشركة.jpeg" alt="">
+          </div>
+          <span>نموذج تقييم الصيانة الوقائية -قطاع الوسط- أمانة الرياض</span>
+          <span>استشاري - شركة مشاري الشثري</span>
+          <span>مدير المشروع / م . مدحت العوضي</span>
+    </header>
+        <div class="info-box">
+        <h1 class="step_title">أدخل البريد الإلكتروني</h1>
+        <input type="text" name="entry.949578588" id="emailInput"  data-required  placeholder="أدخل البريد الإلكتروني" />
+
+        <button type="button" class="step-next" onclick="validateAndGo(2)">
+          <samp>التالي</samp>
+          <i class="fa-solid fa-caret-left"></i>
+        </button>
+      </div>
+      </div>
+
+
+
+
+      <div id="step2" class="step taftish" style="display: none">
+        <h2 class="step_title">اختر الموقع الميداني</h2>
+
+        <div id="1593134746" class="step_radio"></div>
+
+        <div class="step-return" onclick="goToStep(1)">
+          <i class="fa-solid fa-caret-right"></i>
+          <button type="button">السابق</button>
+        </div>
+      </div>
+
+      <div id="step3" class="step taftish" style="display: none">
+        <div class="search-wrapper">
+          <i class="fa-solid fa-magnifying-glass search-icon"></i>
+          <input type="text" class="search_step" id="search_11479402" placeholder="ابحث هنا..." />
+        </div>
+
+        <div id="11479402" class="step_radio container"></div>
+
+        <div class="step-buttons">
+          <button type="button" class="btn step-button" onclick="goToStep(2)">السابق</button>
+          <button type="button" class="btn step-button" onclick="validateAndGo(7)">التالي</button>
+        </div>
+      </div>
+
+      <div id="step4" class="step taftish" style="display: none">
+        <div class="search-wrapper">
+          <i class="fa-solid fa-magnifying-glass search-icon"></i>
+          <input type="text" class="search_step" id="search_103065307" placeholder="ابحث هنا..." />
+        </div>
+
+        <div id="103065307" class="step_radio container"></div>
+
+        <div class="step-buttons">
+          <button type="button" class="btn step-button" onclick="goToStep(2)">السابق</button>
+          <button type="button" class="btn step-button" onclick="validateAndGo(8)">التالي</button>
+        </div>
+      </div>
+
+      <div id="step5" class="step taftish" style="display: none">
+        <div class="search-wrapper">
+          <i class="fa-solid fa-magnifying-glass search-icon"></i>
+          <input type="text" class="search_step" id="search_1121630026" placeholder="ابحث هنا..." />
+        </div>
+
+        <div id="1121630026" class="step_radio container"></div>
+
+        <div class="step-buttons">
+          <button type="button" class="btn step-button" onclick="goToStep(2)">السابق</button>
+          <button type="button" class="btn step-button" onclick="goToStep(9)">التالي</button>
+        </div>
+      </div>
+
+
+      <div id="step7" class="step" style="display: none"></div>
+
+
+
+      <div id="step8" class="step" style="display: none"></div>
+
+
+
+
+
+      <div id="step9" class="step" style="display: none"></div>
+
+
+
+
+
+
+
+
+
+
+
+
+     <div id="step99" class="step taftish" style="display: none" >
+        <h2 class="step_title">المشرف الميداني</h2>
+        <div id="288080024" class="step_radio container"></div>
+
+        <div class="step-buttons">
+          <button type="button" class="btn step-button" onclick="goToStep(2)">السابق</button>
+          <button type="button" class="btn step-button" onclick="validateAndGo(100)">التالي</button>
+        </div>
+      </div>
+
+
+
+
+      <div id="step100" class="step" style="display: none">
+        <h2>التحقق قبل الإرسال</h2>
+
+
+         <button type="button" class="btn step-button" onclick="submitToGoogle()">إرسال التقرير النهائي</button> 
+         <button type="button" class="btn step-button" onclick="goToStep(2)">السابق</button>
+      </div>
+
+
+      <!-- <div id="step101" class="step" style="display: none">
+        <h2>تم الإرسال بنجاح</h2>
+        <button type="button" class="btn step-button" onclick="goToStep(2)">إرسال تقرير جديد</button>
+      </div> -->
+
+
+    </form>
+  </body>
+
+  <script src="../bootstrap/js/bootstrap.min.js"></script>
+  <script src="../js/google.js"></script>
+</html>
